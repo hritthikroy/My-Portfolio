@@ -775,7 +775,6 @@ section {
 
 .project-card:hover .project-icon {
     transform: scale(1.1);
-    opacity: 0;
 }
 
 .project-overlay {
@@ -792,6 +791,10 @@ section {
 
 .project-card:hover .project-overlay {
     opacity: 1;
+}
+
+.project-card:hover .project-icon {
+    opacity: 0;
 }
 
 .project-links {
@@ -1501,14 +1504,7 @@ section {
         font-size: 3.5rem;
     }
     
-    .project-overlay {
-        opacity: 1;
-        background: linear-gradient(135deg, rgba(99, 102, 241, 0.85) 0%, rgba(236, 72, 153, 0.85) 100%);
-    }
-    
     .project-link {
-        transform: translateY(0);
-        opacity: 1;
         width: 54px;
         height: 54px;
         font-size: 1.2rem;
@@ -1741,6 +1737,20 @@ section {
     
     .project-card:active {
         transform: scale(0.98);
+    }
+    
+    .project-overlay {
+        opacity: 1;
+        background: linear-gradient(135deg, rgba(99, 102, 241, 0.85) 0%, rgba(236, 72, 153, 0.85) 100%);
+    }
+    
+    .project-icon {
+        opacity: 0;
+    }
+    
+    .project-link {
+        transform: translateY(0);
+        opacity: 1;
     }
     
     .highlight-card:hover,

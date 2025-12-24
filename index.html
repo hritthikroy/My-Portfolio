@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hritthik Roy | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">&lt;HR /&gt;</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting animate-fade-up">Hey there! 👋</p>
+                <h1 class="hero-title animate-fade-up delay-1">
+                    I'm <span class="gradient-text">Hritthik Roy</span>
+                </h1>
+                <h2 class="hero-subtitle animate-fade-up delay-2">
+                    <span class="typewriter"></span>
+                </h2>
+                <p class="hero-description animate-fade-up delay-3">
+                    Passionate about building innovative solutions in the crypto and fintech space. 
+                    I love automating things and turning complex problems into elegant code.
+                </p>
+                <div class="hero-cta animate-fade-up delay-4">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+                <div class="hero-social animate-fade-up delay-5">
+                    <a href="https://github.com/hritthikroy" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/hritthikroy" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com/hritthikroy" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual animate-fade-left">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">developer.js</span>
+                    </div>
+                    <div class="window-content">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"Hritthik Roy"</span>,
+  <span class="code-property">role</span>: <span class="code-string">"Full Stack Developer"</span>,
+  <span class="code-property">skills</span>: [<span class="code-string">"Go"</span>, <span class="code-string">"JS"</span>, <span class="code-string">"Dart"</span>],
+  <span class="code-property">passion</span>: <span class="code-string">"Crypto & Fintech"</span>,
+  <span class="code-property">motto</span>: <span class="code-string">"Automate Everything!"</span>
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Turning Ideas Into <span class="gradient-text">Reality</span></h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="image-border"></div>
+                        <img src="https://avatars.githubusercontent.com/hritthikroy" alt="Hritthik Roy" class="profile-img">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a <strong>Full Stack Developer</strong> who thrives on building innovative solutions, 
+                        especially in the exciting world of crypto and fintech.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <i class="fas fa-robot"></i>
+                            <h4>Trading Bots</h4>
+                            <p>Building automated trading solutions for crypto markets</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Mobile Apps</h4>
+                            <p>Developing cross-platform apps with Flutter</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-globe"></i>
+                            <h4>Web3 & DeFi</h4>
+                            <p>Exploring decentralized technologies</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-code"></i>
+                            <h4>Modern Web</h4>
+                            <p>Creating web apps with cutting-edge tech</p>
+                        </div>
+                    </div>
+                    <div class="about-status">
+                        <div class="status-item">
+                            <span class="status-icon">🏠</span>
+                            <span>Working Remotely</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-icon">🔭</span>
+                            <span>Building Trading Solutions</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-icon">🌱</span>
+                            <span>Learning Web3 & Advanced Go</span>
+                        </div>
+                    </div>
+                    <blockquote class="philosophy">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"First, solve the problem. Then, write the code."</p>
+                        <cite>— John Johnson</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Arsenal</span>
+                <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Go">
+                            <i class="fab fa-golang"></i>
+                            <span>Go</span>
+                        </div>
+                        <div class="skill-item" data-skill="JavaScript">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item" data-skill="Dart">
+                            <i class="fas fa-bullseye"></i>
+                            <span>Dart</span>
+                        </div>
+                        <div class="skill-item" data-skill="TypeScript">
+                            <i class="fab fa-js"></i>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Flutter">
+                            <i class="fas fa-feather-alt"></i>
+                            <span>Flutter</span>
+                        </div>
+                        <div class="skill-item" data-skill="React">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item" data-skill="Node.js">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item" data-skill="Express">
+                            <i class="fas fa-server"></i>
+                            <span>Express</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cubes"></i> Web3 & Crypto</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Blockchain">
+                            <i class="fas fa-link"></i>
+                            <span>Blockchain</span>
+                        </div>
+                        <div class="skill-item" data-skill="DeFi">
+                            <i class="fas fa-coins"></i>
+                            <span>DeFi</span>
+                        </div>
+                        <div class="skill-item" data-skill="Smart Contracts">
+                            <i class="fas fa-file-contract"></i>
+                            <span>Smart Contracts</span>
+                        </div>
+                        <div class="skill-item" data-skill="Trading Bots">
+                            <i class="fas fa-robot"></i>
+                            <span>Trading Bots</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Git">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item" data-skill="Docker">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item" data-skill="APIs">
+                            <i class="fas fa-plug"></i>
+                            <span>REST APIs</span>
+                        </div>
+                        <div class="skill-item" data-skill="Automation">
+                            <i class="fas fa-cogs"></i>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/hritthikroy" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Crypto</span>
+                        <h3>Automated Trading Bot</h3>
+                        <p>A sophisticated trading bot for crypto markets with automated strategies, real-time market analysis, and risk management features.</p>
+                        <div class="project-tech">
+                            <span>Go</span>
+                            <span>APIs</span>
+                            <span>WebSocket</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/hritthikroy" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Mobile</span>
+                        <h3>Flutter Finance App</h3>
+                        <p>Cross-platform mobile application for tracking crypto portfolios and market trends.</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/hritthikroy" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Web3</span>
+                        <h3>DeFi Dashboard</h3>
+                        <p>Web3 dashboard for monitoring DeFi protocols, yield farming, and liquidity pools.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Web3.js</span>
+                            <span>Ethereum</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/hritthikroy" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Automation</span>
+                        <h3>Task Automation Suite</h3>
+                        <p>Collection of automation scripts and tools for streamlining development workflows.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Python</span>
+                            <span>Shell</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-cta">
+                <a href="https://github.com/hritthikroy" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i>
+                    <span>View All Projects on GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-intro">
+                        I'm always open for collaborations and interesting projects. 
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:hello@hritthikroy.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@hritthikroy.com</span>
+                        </a>
+                        <a href="https://github.com/hritthikroy" target="_blank" class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/hritthikroy</span>
+                        </a>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/hritthikroy" target="_blank" class="social-btn">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/hritthikroy" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/hritthikroy" target="_blank" class="social-btn">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>&lt;HR /&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Designed & Built with <span class="heart">❤️</span> by Hritthik Roy
+                </p>
+                <p class="footer-quote">
+                    ☕ Coffee → 💻 Code
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

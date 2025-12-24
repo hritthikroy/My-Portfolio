@@ -766,6 +766,7 @@ section {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     transition: var(--transition-normal);
+    z-index: 1;
 }
 
 .project-card.featured .project-icon {
@@ -774,17 +775,19 @@ section {
 
 .project-card:hover .project-icon {
     transform: scale(1.1);
+    opacity: 0;
 }
 
 .project-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.9) 0%, rgba(236, 72, 153, 0.9) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     transition: var(--transition-normal);
+    backdrop-filter: blur(5px);
 }
 
 .project-card:hover .project-overlay {
@@ -793,30 +796,43 @@ section {
 
 .project-links {
     display: flex;
-    gap: 16px;
+    gap: 20px;
 }
 
 .project-link {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--primary);
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.4);
     border-radius: 50%;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     transition: var(--transition-normal);
-    transform: translateY(20px);
+    transform: translateY(30px);
+    opacity: 0;
 }
 
 .project-card:hover .project-link {
     transform: translateY(0);
+    opacity: 1;
+}
+
+.project-card:hover .project-link:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.project-card:hover .project-link:nth-child(2) {
+    transition-delay: 0.2s;
 }
 
 .project-link:hover {
-    background: var(--primary-light);
-    transform: scale(1.1);
+    background: white;
+    color: var(--primary);
+    transform: scale(1.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .project-content {

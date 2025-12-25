@@ -199,6 +199,86 @@ projectCards.forEach(card => {
     });
 });
 
+// ===== Code Block Typewriter Effect =====
+const codeLines = [
+    { text: 'const ', type: 'keyword' },
+    { text: 'developer', type: 'variable' },
+    { text: ' = {\n', type: 'plain' },
+    { text: '  name', type: 'property' },
+    { text: ': ', type: 'plain' },
+    { text: '"Hritthik Roy"', type: 'string' },
+    { text: ',\n', type: 'plain' },
+    { text: '  role', type: 'property' },
+    { text: ': ', type: 'plain' },
+    { text: '"Full Stack Developer"', type: 'string' },
+    { text: ',\n', type: 'plain' },
+    { text: '  skills', type: 'property' },
+    { text: ': [', type: 'plain' },
+    { text: '"Go"', type: 'string' },
+    { text: ', ', type: 'plain' },
+    { text: '"JS"', type: 'string' },
+    { text: ', ', type: 'plain' },
+    { text: '"Dart"', type: 'string' },
+    { text: '],\n', type: 'plain' },
+    { text: '  passion', type: 'property' },
+    { text: ': ', type: 'plain' },
+    { text: '"Crypto & Fintech"', type: 'string' },
+    { text: ',\n', type: 'plain' },
+    { text: '  motto', type: 'property' },
+    { text: ': ', type: 'plain' },
+    { text: '"Automate Everything!"', type: 'string' },
+    { text: '\n};', type: 'plain' }
+];
+
+function typeCode() {
+    const codeElement = document.getElementById('code-typewriter');
+    if (!codeElement) return;
+    
+    let lineIndex = 0;
+    let charIndex = 0;
+    let currentSpan = null;
+    
+    function typeNextChar() {
+        if (lineIndex >= codeLines.length) {
+            // Hide cursor when done
+            const cursor = document.querySelector('.code-cursor');
+            if (cursor) cursor.style.display = 'none';
+            return;
+        }
+        
+        const currentLine = codeLines[lineIndex];
+        
+        // Create new span for this segment if needed
+        if (charIndex === 0) {
+            currentSpan = document.createElement('span');
+            if (currentLine.type !== 'plain') {
+                currentSpan.className = `code-${currentLine.type}`;
+            }
+            codeElement.appendChild(currentSpan);
+        }
+        
+        // Add next character
+        const char = currentLine.text[charIndex];
+        currentSpan.textContent += char;
+        charIndex++;
+        
+        // Move to next segment if done with current
+        if (charIndex >= currentLine.text.length) {
+            lineIndex++;
+            charIndex = 0;
+        }
+        
+        // Vary typing speed for natural feel
+        const delay = char === '\n' ? 100 : Math.random() * 30 + 25;
+        setTimeout(typeNextChar, delay);
+    }
+    
+    // Start typing after a short delay
+    setTimeout(typeNextChar, 800);
+}
+
+document.addEventListener('DOMContentLoaded', typeCode);
+
 // ===== Console Easter Egg =====
 console.log('%c👋 Hey there, fellow developer!', 'font-size: 20px; font-weight: bold; color: #6366f1;');
 console.log('%cLooking at the code? Nice! Feel free to reach out if you want to collaborate.', 'font-size: 14px; color: #a1a1aa;');

@@ -409,6 +409,19 @@ body {
 .code-property { color: #f78c6c; }
 .code-string { color: #c3e88d; }
 
+/* Code Typewriter Cursor */
+.code-cursor {
+    color: var(--primary);
+    font-weight: bold;
+    animation: code-blink 0.7s infinite;
+    margin-left: 2px;
+}
+
+@keyframes code-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
 /* Scroll Indicator */
 .scroll-indicator {
     position: absolute;

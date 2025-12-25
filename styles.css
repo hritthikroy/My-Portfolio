@@ -56,59 +56,7 @@ body {
     padding: 0 24px;
 }
 
-/* ===== Animated Background ===== */
-.bg-animation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
-}
 
-.gradient-orb {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.4;
-    animation: float 20s infinite ease-in-out;
-}
-
-.orb-1 {
-    width: 600px;
-    height: 600px;
-    background: var(--primary);
-    top: -200px;
-    left: -200px;
-    animation-delay: 0s;
-}
-
-.orb-2 {
-    width: 500px;
-    height: 500px;
-    background: var(--secondary);
-    bottom: -150px;
-    right: -150px;
-    animation-delay: -7s;
-}
-
-.orb-3 {
-    width: 400px;
-    height: 400px;
-    background: var(--accent);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation-delay: -14s;
-}
-
-@keyframes float {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    25% { transform: translate(50px, -50px) scale(1.1); }
-    50% { transform: translate(-30px, 30px) scale(0.9); }
-    75% { transform: translate(-50px, -30px) scale(1.05); }
-}
 
 /* ===== Navigation ===== */
 .navbar {
